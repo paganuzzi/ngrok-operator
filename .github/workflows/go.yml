@@ -13,6 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Cache multiple paths
+      uses: actions/cache@v2
+      with:
+        path: |
+          /home
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
@@ -26,3 +33,4 @@ jobs:
       with:
         name: binario
         path: ./main 
+
