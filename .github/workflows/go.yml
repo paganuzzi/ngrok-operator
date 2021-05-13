@@ -32,5 +32,5 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
         name: binario
-        path: ./build/bin/main
+        path: ./build/bin/user_setup
 
