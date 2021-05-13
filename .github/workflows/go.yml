@@ -20,3 +20,9 @@ jobs:
 
     - name: Build
       run: go build -v ./cmd/manager/main.go
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        name: binario
+        path: ./main 
