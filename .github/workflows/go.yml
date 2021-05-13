@@ -28,9 +28,19 @@ jobs:
     - name: Build
       run: go build -v -o ./build/bin/ ./cmd/manager/main.go
 
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v2.2.3
-      with:
-        name: binario
-        path: build/bin/main
+    # - name: Upload a Build Artifact
+    #   uses: actions/upload-artifact@v2.2.3
+    #   with:
+    #     name: binario
+    #     path: build/bin/main
 
+    -  
+      uses: docker/setup-buildx-action@v1
+      id: buildx
+      with:
+        install: true
+    -
+      name: Build
+      run: |
+        cd build/
+        docker build . # will run buildx
