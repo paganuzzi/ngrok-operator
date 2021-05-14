@@ -56,3 +56,4 @@ jobs:
           file: ./build/Dockerfile
           push: true
           tags:  ghcr.io/paganuzzi/ngrokoperator:latest
+          platforms: linux/arm/v7
