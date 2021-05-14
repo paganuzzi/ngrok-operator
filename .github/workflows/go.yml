@@ -43,8 +43,7 @@ jobs:
       name: Build image
       id: build-image
       run: |
-        cd build/
-        docker build . # will run buildx
+        docker build . -f build/Dockerfile
     
     # -
     #   name: Login to GitHub Container Registry
