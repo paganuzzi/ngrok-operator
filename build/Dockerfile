@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
+FROM alpine:latest
 
 ENV OPERATOR=/usr/local/bin/ngrok-operator \
     USER_UID=1001 \
