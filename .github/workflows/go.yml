@@ -44,6 +44,7 @@ jobs:
       id: build-image
       run: |
         cd build/
+        pwd
         docker build . # will run buildx
     
     -
