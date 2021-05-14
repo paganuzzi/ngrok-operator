@@ -53,4 +53,4 @@ jobs:
           context: .
           file: ./build/Dockerfile
           push: true
-          tags:  ghcr.io/paganuzzi/ngrokoperator:${{ steps.tag.outputs.tag }}
+          tags:  ghcr.io/paganuzzi/ngrokoperator:latest
