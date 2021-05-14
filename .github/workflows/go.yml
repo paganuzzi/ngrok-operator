@@ -57,7 +57,7 @@ jobs:
       id: push-to-github
       uses: redhat-actions/push-to-registry@v2
       with:
-        image: ${{ steps.build-image.outputs.image }}
+        image: paganuzzi/ngrok-operator:latest
         registry: ghcr.io
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
