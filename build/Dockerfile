@@ -8,7 +8,7 @@ ENV OPERATOR=/usr/local/bin/ngrok-operator \
 COPY build/_output/bin/ngrok-operator ${OPERATOR}
 
 COPY build/bin /usr/local/bin
-COPY templates /templates
+#COPY ../templates /templates
 
 RUN  /usr/local/bin/user_setup
 

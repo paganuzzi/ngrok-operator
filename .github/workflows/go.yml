@@ -26,7 +26,7 @@ jobs:
         go-version: 1.15
 
     - name: Build go binary
-      run: go build -v -o ./build/bin/ ./cmd/manager/main.go
+      run: go build -v -o .build/_output/bin/ngrok-operator ./cmd/manager/main.go
 
     # - name: Upload a Build Artifact
     #   uses: actions/upload-artifact@v2.2.3
