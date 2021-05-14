@@ -28,22 +28,15 @@ jobs:
     - name: Build go binary
       run: go build -v -o ./build/_output/bin/ngrok-operator ./cmd/manager/main.go
 
-    # - name: Upload a Build Artifact
-    #   uses: actions/upload-artifact@v2.2.3
-    #   with:
-    #     name: binario
-    #     path: build/bin/main
+    -
+      name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
 
     -  
       uses: docker/setup-buildx-action@v1
       id: buildx
       with:
         install: true
-    -
-      name: Build image
-      id: build-image
-      run: |
-        docker build . -f build/Dockerfile -t paganuzzi/ngrok-operator:latest
     
     -
       name: Login to GitHub Container Registry
@@ -52,13 +45,12 @@ jobs:
         registry: ghcr.io
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Push To github
-      id: push-to-github
-      uses: redhat-actions/push-to-registry@v2
-      with:
-        image: paganuzzi/ngrok-operator:latest
-        registry: ghcr.io
-        username: ${{ github.repository_owner }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-
+    
+    -
+        name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./build/Dockerfile
+          push: true
+          tags:  ghcr.io/paganuzzi/ngrok-operator:${{ steps.tag.outputs.tag }}
