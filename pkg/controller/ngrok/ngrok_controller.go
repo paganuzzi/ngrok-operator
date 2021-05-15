@@ -234,7 +234,7 @@ func newNgrokPod(cr *ngrokv1alpha1.Ngrok) *corev1.Pod {
 			Containers: []corev1.Container{
 				{
 					Name:    "ngrok",
-					Image:   "wernight/ngrok",
+					Image:   "ghcr.io/paganuzzi/dockerngrok:latest",
 					Command: []string{"ngrok", "start", "--config", "/ngrok/ngrok.conf", "--all"},
 					Ports: []corev1.ContainerPort{
 						{ContainerPort: ngrokPort},
