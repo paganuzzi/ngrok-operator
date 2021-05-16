@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   ngrok-operator:
-    - description: Deploy a basic Alpine Linux pod
+    - description: Deploy a ngrok-operator
       home: https://paganuzzi.github.io/ngrok-operator/
       name: ngrok-operator
       sources:
