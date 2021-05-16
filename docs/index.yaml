@@ -7,5 +7,5 @@ entries:
       sources:
       - https://paganuzzi.github.io/ngrok-operator/
       urls:
-      - https://paganuzzi.github.io/ngrok-operator/charts.tar.xz
+      - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
       version: 0.0.2
