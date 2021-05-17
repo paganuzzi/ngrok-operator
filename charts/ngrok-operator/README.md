@@ -1,5 +1,5 @@
 # ngrok-operator charts
-Helm chart for ngrok-operators
+Helm repository for the arm version of ngrok-operator, a fork of zufardhiyaulhaq/ngrok-operator
 
 ### Installing the charts
 ```

@@ -1,11 +1,19 @@
 apiVersion: v1
 entries:
   ngrok-operator:
-    - description: Deploy a ngrok-operator
-      home: https://paganuzzi.github.io/ngrok-operator/
-      name: ngrok-operator
-      sources:
-      - https://paganuzzi.github.io/ngrok-operator/
-      urls:
-      - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
-      version: 0.0.2
+  - apiVersion: v1
+    appVersion: 0.0.2
+    created: "2021-05-17T16:46:08.936657502-03:00"
+    description: arm version of ngrok-operator, a fork of zufardhiyaulhaq/ngrok-operator
+    digest: 83949b81e33f67e5272864671695f282d831bb056a74156a09121797618b7302
+    home: https://github.com/paganuzzi/ngrok-operator
+    keywords:
+    - ngrok
+    - kubernetes
+    - operator
+    name: ngrok-operator
+    type: application
+    urls:
+    - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
+    version: 0.0.2
+generated: "2021-05-17T16:46:08.935964715-03:00"
