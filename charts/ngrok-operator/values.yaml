@@ -1,8 +1,8 @@
 operator:
   # image of ngrok-operator
-  image: "ghcr.io/paganuzzi/ngrokoperator:latest"
+  image: "ghcr.io/paganuzzi/ngrokoperator"
   # tag of ngrok-operator image
-  tag: "0.0.2"
+  tag: "latest"
   # pullPolicy for operator image
   pullPolicy: "Always"
   # number of replica for deployment
