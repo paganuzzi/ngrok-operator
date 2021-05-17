@@ -18,6 +18,7 @@ entries:
     - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
     version: 0.0.2
 generated: "2021-05-17T17:21:20.38397371-03:00"
+<<<<<<< HEAD
 =======
     - description: Deploy a ngrok-operator
       home: https://paganuzzi.github.io/ngrok-operator/
@@ -28,3 +29,5 @@ generated: "2021-05-17T17:21:20.38397371-03:00"
       - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
       version: 0.0.2
 >>>>>>> parent of 7acd749... helm chart modifications
+=======
+>>>>>>> f409de0597123a5d4c45a9db481922ab0478ee06
