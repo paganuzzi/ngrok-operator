@@ -1,13 +1,12 @@
 apiVersion: v1
 entries:
   ngrok-operator:
-<<<<<<< HEAD
   - apiVersion: v1
     appVersion: 0.0.2
-    created: "2021-05-17T17:21:20.384703324-03:00"
-    description: arm version of ngrok-operator, a fork of zufardhiyaulhaq/ngrok-operator
-    digest: 02d6da720e453a05b5d5d921b3686ca28d6519afff97abc5f071ef1e6e24a2d4
-    home: https://github.com/paganuzzi/ngrok-operator
+    created: "2021-05-17T17:57:34.096697608-03:00"
+    description: ngrok-operator for managing ngrok lifecycle
+    digest: 04683ede9d62b3f8f0c4a01227c4d34b36c7de16bb2b4778e5cd9a6dc1a7cf1c
+    home: https://github.com/zufardhiyaulhaq/ngrok-operator
     keywords:
     - ngrok
     - kubernetes
@@ -17,17 +16,4 @@ entries:
     urls:
     - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
     version: 0.0.2
-generated: "2021-05-17T17:21:20.38397371-03:00"
-<<<<<<< HEAD
-=======
-    - description: Deploy a ngrok-operator
-      home: https://paganuzzi.github.io/ngrok-operator/
-      name: ngrok-operator
-      sources:
-      - https://paganuzzi.github.io/ngrok-operator/
-      urls:
-      - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
-      version: 0.0.2
->>>>>>> parent of 7acd749... helm chart modifications
-=======
->>>>>>> f409de0597123a5d4c45a9db481922ab0478ee06
+generated: "2021-05-17T17:57:34.095984677-03:00"
