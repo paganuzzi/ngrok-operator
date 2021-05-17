@@ -3,9 +3,9 @@ entries:
   ngrok-operator:
   - apiVersion: v1
     appVersion: 0.0.2
-    created: "2021-05-17T17:03:17.922639483-03:00"
+    created: "2021-05-17T17:21:20.384703324-03:00"
     description: arm version of ngrok-operator, a fork of zufardhiyaulhaq/ngrok-operator
-    digest: f403cd273bac757b5a1ab334bd6a6eb4bfb0298d191f3eb3f918e046b60cdeab
+    digest: 02d6da720e453a05b5d5d921b3686ca28d6519afff97abc5f071ef1e6e24a2d4
     home: https://github.com/paganuzzi/ngrok-operator
     keywords:
     - ngrok
@@ -16,4 +16,4 @@ entries:
     urls:
     - https://paganuzzi.github.io/ngrok-operator/ngrok-operator-0.0.2.tgz
     version: 0.0.2
-generated: "2021-05-17T17:03:17.921799595-03:00"
+generated: "2021-05-17T17:21:20.38397371-03:00"

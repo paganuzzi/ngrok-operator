@@ -5,7 +5,6 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: ngrok-operator
-  namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
   name: ngrok-operator
